@@ -25,4 +25,14 @@ defmodule Cards do
   end
 
 
+  @doc """
+  Shuffle Deck
+  Shuffle deck cards
+
+  ## Example
+  ["Ace", "Two", "Three"] => ["Two", "Three", "Ace"]
+  """
+  def shuffle(deck) do
+
+  end
 end
