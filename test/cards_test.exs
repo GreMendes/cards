@@ -10,4 +10,8 @@ defmodule CardsTest do
     assert Cards.hello == :world
   end
 
+  test "create new deck" do
+    assert Cards.create_deck != []
+  end
+
 end

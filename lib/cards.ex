@@ -1,6 +1,6 @@
 defmodule Cards do
   @moduledoc """
-  Documentation for Cards.
+  Module to handle the Cards
   """
 
   @doc """
@@ -15,4 +15,14 @@ defmodule Cards do
   def hello do
     :world
   end
+
+  @doc """
+  Create Deck
+  Create a new Array of cards
+  """
+  def create_deck do
+    ["Ace", "Two", "Three"]
+  end
+
+
 end
