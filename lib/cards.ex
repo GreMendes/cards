@@ -33,6 +33,6 @@ defmodule Cards do
   ["Ace", "Two", "Three"] => ["Two", "Three", "Ace"]
   """
   def shuffle(deck) do
-
+    Enum.shuffle(deck)
   end
 end
