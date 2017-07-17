@@ -21,7 +21,7 @@ defmodule Cards do
   Create a new Array of cards
   """
   def create_deck do
-    ["Ace", "Two", "Three"]
+    ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"]
   end
 
 
