@@ -35,4 +35,17 @@ defmodule Cards do
   def shuffle(deck) do
     Enum.shuffle(deck)
   end
+
+  @doc """
+  Contains?
+  Shuffle deck cards
+
+  ## Example
+  ["Ace", "Two", "Three"] contains? "King" => false
+  ["Ace", "Two", "Three"] contains? "Two" => true
+  """
+  def contains?(deck, card) do
+    Enum.member?(deck, card)
+  end
+
 end
