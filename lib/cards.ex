@@ -63,4 +63,17 @@ defmodule Cards do
     Enum.member?(deck, card)
   end
 
+  @doc """
+  deal
+  Deal cards
+
+  ## Example
+  ["Ace", "Two", "Three"] deal 1 => {["Ace"], ["Two", "Three"]}
+  """
+
+  def deal(deck, hand_size) do
+    Enum.split(deck, hand_size)
+  end
+
+
 end
