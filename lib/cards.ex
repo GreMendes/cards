@@ -91,8 +91,8 @@ defmodule Cards do
 #    end
 
     case File.read(filename) do
-       { :ok, binary } -> :erlang.binary_to_term binary
-       { :error, _reason } -> "That file does not exist"
+       { :ok, binary } -> :erlang.binary_to_term binary # pattern matching
+       { :error, _reason } -> "That file does not exist" # variable with _underscore are unused/ignored
     end
 
   end
