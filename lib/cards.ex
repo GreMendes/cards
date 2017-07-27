@@ -1,23 +1,9 @@
 defmodule Cards do
   @moduledoc """
-  Module to handle the Cards
+    Provides methods for creating and handling a deck of cards
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
-
-  @doc """
-  Create Deck
   Create a new Array of cards
   """
   def create_deck do
@@ -41,11 +27,11 @@ defmodule Cards do
 
 
   @doc """
-  Shuffle Deck
   Shuffle deck cards
 
   ## Example
-  ["Ace", "Two", "Three"] => ["Two", "Three", "Ace"]
+  ["Ace", "Two", "Three"]
+  => ["Two", "Three", "Ace"]
   """
   def shuffle(deck) do
     Enum.shuffle(deck)
@@ -53,22 +39,23 @@ defmodule Cards do
 
   @doc """
   Contains?
-  Shuffle deck cards
 
   ## Example
-  ["Ace", "Two", "Three"] contains? "King" => false
-  ["Ace", "Two", "Three"] contains? "Two" => true
+  ["Ace", "Two", "Three"] contains? "King"
+   => false
+  ["Ace", "Two", "Three"] contains? "Two"
+   => true
   """
   def contains?(deck, card) do
     Enum.member?(deck, card)
   end
 
   @doc """
-  deal
   Deal cards
 
   ## Example
-  ["Ace", "Two", "Three"] deal 1 => {["Ace"], ["Two", "Three"]}
+  ["Ace", "Two", "Three"] deal 1
+    => {["Ace"], ["Two", "Three"]}
   """
 
   def deal(deck, hand_size) do
